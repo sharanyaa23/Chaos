@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 240 10% 4%;
+    --foreground: 0 0% 95%;
+
+    --card: 240 10% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 240 10% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 330 100% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 160 100% 50%;
+    --secondary-foreground: 240 10% 4%;
+
+    --muted: 240 10% 15%;
+    --muted-foreground: 240 5% 60%;
+
+    --accent: 200 100% 60%;
+    --accent-foreground: 240 10% 4%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 10% 20%;
+    --input: 240 10% 15%;
+    --ring: 330 100% 60%;
+
+    --radius: 0.75rem;
+
+    /* Custom chaos colors */
+    --chaos-pink: 330 100% 60%;
+    --chaos-green: 160 100% 50%;
+    --chaos-blue: 200 100% 60%;
+    --chaos-yellow: 45 100% 60%;
+    --chaos-purple: 270 100% 65%;
+
+    /* Gradients */
+    --gradient-chaos: linear-gradient(135deg, hsl(var(--chaos-pink)), hsl(var(--chaos-purple)), hsl(var(--chaos-blue)));
+    --gradient-card: linear-gradient(180deg, hsl(240 10% 10%), hsl(240 10% 6%));
+    --gradient-glow: radial-gradient(ellipse at center, hsl(var(--chaos-pink) / 0.15), transparent 70%);
+
+    /* Shadows */
+    --shadow-chaos: 0 0 60px hsl(var(--chaos-pink) / 0.3);
+    --shadow-card: 0 20px 60px hsl(0 0% 0% / 0.5);
+    --shadow-button: 0 4px 20px hsl(var(--chaos-pink) / 0.4);
+
+    /* Font families */
+    --font-display: 'Space Grotesk', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  .dark {
+    --background: 240 10% 4%;
+    --foreground: 0 0% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  .text-gradient {
+    background: var(--gradient-chaos);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-pink {
+    box-shadow: 0 0 30px hsl(var(--chaos-pink) / 0.5), 0 0 60px hsl(var(--chaos-pink) / 0.3);
+  }
+
+  .glow-green {
+    box-shadow: 0 0 30px hsl(var(--chaos-green) / 0.5), 0 0 60px hsl(var(--chaos-green) / 0.3);
+  }
+
+  .glow-blue {
+    box-shadow: 0 0 30px hsl(var(--chaos-blue) / 0.5), 0 0 60px hsl(var(--chaos-blue) / 0.3);
+  }
+
+  .animate-glitch {
+    animation: glitch 0.3s ease-in-out;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.4s ease-out;
+  }
+
+  .animate-shake {
+    animation: shake 0.5s ease-in-out;
+  }
+}
+
+@keyframes glitch {
+  0%, 100% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes slide-up {
+  from { 
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground));
+}
