@@ -1,73 +1,98 @@
-# Welcome to your Lovable project
+# 🌀 CHAOS
 
-## Project info
+> **Bad decisions win.**  
+>**Play it here 🔗:** https://chaos-j1r0.onrender.com
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+CHAOS is a fun, chaotic web game built for boredom, laughs, and bad choices.
+In this game, the worst possible decision is always the correct one.
 
-## How can I edit this code?
+- No scores.
+- No goals.
+- **Just chaos.**
 
-There are several ways of editing your application.
+## 🎮 What is CHAOS?
 
-**Use Lovable**
+CHAOS is a choice-based game where you’re given everyday (and not-so-everyday) situations and three options:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+1. One option is sensible
+2. One is neutral
+3. **One is the most chaotic (this is the correct answer)**
 
-Changes made via Lovable will be committed automatically to this repo.
+Choose the chaotic option to build your chaos streak and unlock fun surprises along the way.
 
-**Use your preferred IDE**
+## 🧠 How the Game Works
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**Pick how much chaos you want:**
+- Small Chaos
+- Medium Chaos
+- Full Chaos
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**For each round:**
+1. Read a situation
+2. Choose one of three options
 
-Follow these steps:
+**See:**
+- The chaotic choice (correct)
+- The sensible choice
+- Your choice
+- What actually happened
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+The game reacts to your decisions with funny outcomes and short comments.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🔥 Chaos Streaks & Mini Games
 
-# Step 3: Install the necessary dependencies.
-npm i
+Every time you pick the most chaotic option, your chaos streak increases.
+**Picking a safe option resets the streak.**
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### 🧩 Maze Game
+- Can appear at multiples of 5 chaos streak (5, 10, 15, …)
+- Appears with probability (not guaranteed)
+- Optional and very quick
+- Solving or skipping it resets the chaos streak
 
-**Edit a file directly in GitHub**
+### 🧠 Word Guess Game
+- Appears randomly
+- Only when chaos streak is under multiples of 10
+- Optional and lightweight
+- Does not reset the chaos streak
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+*Both mini-games are designed as fun breaks and never block progress.*
 
-**Use GitHub Codespaces**
+## 🚪 Exit Anytime
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+CHAOS is meant to be light and forgiving. You can exit:
+- From the main game
+- From the maze
+- From the word game
 
-## What technologies are used for this project?
+When you exit, you’ll see a friendly quote like:
+> “Enough chaos for one day.”  
+> “Go do something. Or don’t.”
 
-This project is built with:
+**No guilt. No pressure.**
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## ✨ Why CHAOS?
 
-## How can I deploy this project?
+This project was built for a vibe-coding hackathon focused on:
+- Weird ideas
+- Useless (but fun) projects
+- Creativity over perfection
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+CHAOS doesn’t help you make better life choices. It celebrates the bad ones.
 
-## Can I connect a custom domain to my Lovable project?
+## 🛠️ Built With
 
-Yes, you can!
+- Lovable (vibe coding)
+- ChatGPT
+- A questionable amount of chaos 🌀
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🚀 Running the Project
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+The project is live-hosted. Just open the link and start playing — no setup required.
+
+## 🌀 Final Note
+
+CHAOS is not here to fix your life.
+It’s here to remind you that sometimes, making the worst decision is the most fun.
+
+**Play responsibly. Or don’t.**
